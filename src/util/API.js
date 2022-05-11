@@ -6,12 +6,11 @@ const api = axios.create({
   params: {
     api_key: key,
     language: "en-US",
-    page: 1,
   },
 });
 
-export const getPopularMovies = async () => await api("movie/popular");
+export const getPopularMovies = async () => await api("/popular");
 
-export const getUpcomingMovies = async () => await api("movie/upcoming");
+export const getUpcomingMovies = async () => await api("/upcoming");
 
-export const getTopRatedMovies = async () => await api("movie/top_rated");
+export const getTopRatedMovies = async () => await api("/top_rated");
