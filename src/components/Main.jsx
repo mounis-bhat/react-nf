@@ -34,7 +34,7 @@ export const Main = () => {
           <p className="text-gray-400 text-sm">
             Released: {randomPopularMovie.release_date}
           </p>
-          <p className="w-[45%] md:max-w-[70%] lg:max-w-[50%] xl:max-w-[35%] text-gray-400 text-sm my-4">
+          <p className="w-[100%]  lg:max-w-[50%] xl:max-w-[35%] text-gray-400  my-4">
             {randomPopularMovie.overview}
           </p>
         </div>

@@ -11,7 +11,7 @@ export const Home = () => (
   <>
     <Main />
     <Row title="Popular" fetchFunc={getPopularMovies} queryKey="popular" />
-    <Row title="Top Rated" fetchFunc={getTopRatedMovies} queryKey="topRated" />
     <Row title="Upcoming" fetchFunc={getUpcomingMovies} queryKey="upcoming" />
+    <Row title="Top Rated" fetchFunc={getTopRatedMovies} queryKey="topRated" />
   </>
 );

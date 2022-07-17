@@ -19,7 +19,12 @@ export const Row = ({ title, fetchFunc, queryKey }) => {
         <MdChevronLeft
           size={40}
           className="bg-white left-0 rounded-full absolute opacity-50 hover:opacity-100 cursor-pointer z-10 hidden group-hover:block"
-          onClick={() => (slider.scrollLeft -= 1000)}
+          onClick={() => {
+            slider.scrollBy({
+              top: 0,
+              left: -1000,
+            });
+          }}
         />
         <div
           id={"popularSlider" + queryKey}
@@ -33,7 +38,12 @@ export const Row = ({ title, fetchFunc, queryKey }) => {
         <MdChevronRight
           size={40}
           className="bg-white right-0 rounded-full absolute opacity-50 hover:opacity-100 cursor-pointer z-10 hidden group-hover:block"
-          onClick={() => (slider.scrollLeft += 1000)}
+          onClick={() => {
+            slider.scrollBy({
+              top: 0,
+              left: +1000,
+            });
+          }}
         />
       </div>
     </>

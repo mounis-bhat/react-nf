@@ -4,7 +4,7 @@ import { FaHeart, FaRegHeart } from "react-icons/fa";
 
 export const Movie = ({ movie, like }) => (
   <>
-    <div className="w-[140px] sm:w-[200px] md:w-[160px] lg:w-[220px] inline-block cursor-pointer relative p-2">
+    <div className="w-[140px] sm:w-[200px] md:w-[160px] lg:w-[220px] inline-block cursor-pointer relative p-2 hover:scale-105 ease-in-out duration-300">
       <img
         src={imageUrl + "w300" + movie.poster_path}
         alt={movie.title}
